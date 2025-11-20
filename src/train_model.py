@@ -25,3 +25,4 @@ def main():
     print(f'R2: {r2_score(yte,pred):.3f}\nMAE: {mean_absolute_error(yte,pred):.3f}')
     Path(args.out).parent.mkdir(parents=True, exist_ok=True); joblib.dump(pipe, args.out); print(f'Saved pipeline -> {args.out}')
 if __name__=='__main__': main()
+print("hello")
